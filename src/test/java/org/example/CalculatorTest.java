@@ -7,6 +7,20 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
 
     @Test
+    public void subtract_twoNumbers_Pass(){
+        //Arrange
+        int numberOne = 10;
+        int numberTwo = -18;
+        Calculator calculator = new Calculator();
+
+        //Act
+        int difference = calculator.subtract(numberOne, numberTwo);
+
+        //Assert
+        assertEquals(28, difference);
+    }
+
+    @Test
     public void add_twoNumbers_Pass(){
         //Arrange
         int numberOne = 10;
